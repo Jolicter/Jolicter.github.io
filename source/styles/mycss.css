@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+
+body {
+    font-family: Comfortaa, serif;
+    background: linear-gradient(120deg, #46B92D 12%, #129BB9 100%);
+}
+
+p {
+    color: rgb(56, 56, 56);
+}
+
+.nav-link {
+    color: rgb(196, 196, 196);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(41, 207, 212);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: antiquewhite;
+}
+
+.sidebar {
+    color: rgb(56, 56, 56);
+    background: linear-gradient(200deg, #46B92D 12%, #129BB9 100%);
+
+}
+
+.card {
+    background: linear-gradient(290deg, #46B92D 12%, #129BB9 100%);
+    color: aquamarine;
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+
+.card-team {
+    background: #aaaaaa;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px;
+    border-radius: 61px;
+}
+
+.card-team p {
+    padding-inline: 10px;
+    padding-bottom: 10px;
+}
+
+.card-team h3 {
+    padding: 10px;
+}
+
+.card-team img {
+    border-radius: 61px;
+}
+
+.slide-text,
+.footer-text {
+    color: rgb(56, 56, 56);
+    margin: auto auto;
+}
+
+footer {
+    background: linear-gradient(185deg, #b1b1b1 12%, #dadada 100%);
+    border-top: 3px solid #000;
+    font-size: 18px;
+
+}
+
+
+footer a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+
+
+.btn-outline-primary {
+    background: linear-gradient(15deg, #FBFF00 0%, #12FF06 100%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 3s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@media (max-widht: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.prim {
+    margin-top: 30px;
+    background-color: #f5f7e5;
+    outline: 4px solid #686868;
+    transition: outline 0.5s ease 0s;
+}
+
+.prim:hover {
+    outline: 11px solid #ff0303;
+}
+
+.prim>h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.prim>p {
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.colective {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.kir {
+    color: #252525;
+    font-weight: bold;
+}
+
+.carousel-inner {
+    border: solid;
+    background-color: #575757;
+}
+
+.carousel-inner p {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.recept {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 44px;
+
+}
+
+.modal {
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 1;
+    /* Сидеть на вершине */
+    padding-top: 300px;
+    /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0, 0, 0);
+    /* Цвет запасной вариант  */
+    background-color: rgba(0, 0, 0, 0.4);
+    /*Черный с непрозрачностью */
+}
+
+/* Модальное содержание */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Добавить анимацию */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* Кнопка закрытия */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-content img {
+    height: 400px;
+    width: 400px;
+    padding: 2px 20px 20px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+

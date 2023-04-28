@@ -1,0 +1,30 @@
+
+.info {
+    background: linear-gradient(200deg, #46B92D 12%, #129BB9 100%);
+	padding: 5px;
+  }
+  
+  .info__switch {
+	display: none;
+  }
+  
+  .info__body {
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.4s;
+  }
+  
+  .info__switch:checked~.info__body {
+	max-height: 1000px;
+  }
+  
+  .info__headline::before {
+	content: "";
+	position: absolute;
+	left: -18px;
+	top: 4px;
+	border: 6px solid #000000;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+  }
